@@ -1,0 +1,84 @@
+/* Estilos globais e reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: #f4f4f4;
+}
+
+.header__title {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Main */
+.main {
+    display: flex;
+    flex-direction: column;  /* Organiza os itens na vertical */
+    justify-content: center;  /* Alinha na vertical */
+    align-items: center;  /* Alinha na horizontal */
+    height: 80%;  /* Ocupa o restante da tela */
+}
+
+/* Container para os botões */
+.main__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;  /* Espaçamento entre os botões */
+    margin-bottom: 20px;
+}
+
+/* Estilos dos botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #000000; /* Cor do texto normal */
+}
+
+.btn__conta {
+    background-color: #ffffff; /* Cor de fundo do botão 'Click' */
+}
+
+.btn__conta:hover {
+    background-color: #000000;  /* Cor de fundo quando hover */
+    color: #ffffff;  /* Cor do texto quando hover */
+}
+
+.btn__conta--limpa {
+    background-color: #ffffff;  /* Cor de fundo do botão 'Reiniciar' */
+    color: rgb(0, 0, 0);  /* Cor do texto normal */
+}
+
+.btn__conta--limpa:hover {
+    background-color: #000000;  /* Cor de fundo quando hover */
+    color: #ffffff;  /* Cor do texto quando hover */
+}
+
+/* Display do contador */
+.main__display {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.span__exibir {
+    font-size: 2.5rem;
+    color: #000;
+}
